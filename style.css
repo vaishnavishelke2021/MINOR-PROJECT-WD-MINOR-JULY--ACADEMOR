@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #d4e6e8;
+}
+
+
+/* header=====================================================  */
+#heading{
+    padding: 1rem;
+    align-items: center;
+    margin: auto;
+    color: #0083b0;
+    background-color: rgba(255, 255, 255, 0.09);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.051);
+}
+
+#heading h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 0px;
+    margin-top: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+#heading .img{
+    width: 25%;
+    margin: auto;
+}
+#heading .img img{
+    height: 100px;
+    width: 400px;
+}
+
+
+/* cards======================================================  */
+#card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#card-container .card{
+    border-radius: 6px;
+}
+#card-container .card:hover{
+    overflow: hidden;
+    transform:scale(1.02);
+    transition: 0.5s;
+    box-shadow: rgba(17, 17, 26, 0.184) 0px 4px 16px, rgba(17, 17, 26, 0.064) 0px 8px 32px;
+}
+#card-container .card:hover img{
+    transform: scale(1.05);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#card-container img{
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#card-container .card-title{
+    margin-top: 0.3rem;
+}
+
+#card-container .card-text{
+    font-size: 14px;
+}
+
+#card-container a{
+    font-size: 0.9rem;
+    background-image:linear-gradient( #00b3dbed,#0083b0) ;
+    padding: 4px 12px;
+    border: none;
+}
+#card-container a:hover{
+    background-image: linear-gradient(to bottom,  #00b3db99,#0084b0bc);
+}
+
+
+/* footer=============================================================  */
+#footer{
+    margin-top: 4rem;
+    background-image: linear-gradient(to bottom,  #00b3dbbe,#0084b0de);    
+}
+
+#footer #footer-links{
+    width: 80%;
+    margin: auto;
+}
+
+#footer #footer-links ul{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 2.3rem;
+}
+
+#footer #footer-links ul a{
+    text-decoration: none;
+}
+
+#footer #footer-links ul a li{
+    text-decoration: none;
+    margin-top: 0.6rem;
+    color: #d4e6e8c8;
+    font-size: 1.1rem;
+}
+#footer #footer-links ul a li:hover{
+    cursor: pointer;
+    color: white;
+}
+
+#copyright h5{
+    color: #0084b0bc;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
